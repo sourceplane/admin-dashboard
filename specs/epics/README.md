@@ -7,6 +7,6 @@ folder is the adoption; the merge creates the epic in the workspace.
 
 | Epic | Cluster | Status | What it is |
 |------|---------|--------|------------|
-| [`admin-dashboard/`](./admin-dashboard/) | **AD** | In progress (AD0) | Vercel's Admin Dashboard — a products table, Auth.js with GitHub sign-in — on Cloudflare Workers with Supabase Postgres through Hyperdrive, and an Orun baseline that instantiates it in one landing (AD2) |
+| [`admin-dashboard/`](./admin-dashboard/) | **AD** | In progress (AD1: the site on Workers) | Vercel's Admin Dashboard — a products table, Auth.js with GitHub sign-in — on Cloudflare Workers with Supabase Postgres through Hyperdrive, and an Orun baseline that instantiates it in one landing (AD2) |
 
 As-built ≠ intent: what shipped lives in each epic's `IMPLEMENTATION-STATUS.md`.
