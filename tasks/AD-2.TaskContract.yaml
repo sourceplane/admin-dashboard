@@ -1,0 +1,21 @@
+apiVersion: orun.io/v1
+kind: TaskContract
+metadata:
+  name: AD-2
+  title: "The dashboard on Workers and Supabase"
+spec:
+  goal: The admin dashboard runs on Cloudflare Workers + Static Assets with its Postgres a Supabase project reached through Hyperdrive, its schema, products and session key as migrations applied by db-migrate, the Supabase and Hyperdrive roots provisioning stage and prod, and GitHub sign-in connected after the build
+  affects:
+    - apps/web
+    - packages/db
+    - infra
+    - tests
+    - tooling/migrations
+    - pnpm-lock.yaml
+    - pnpm-workspace.yaml
+    - README.md
+    - .gitignore
+  doneWhen:
+    - pnpm typecheck, lint, test and build are green
+    - the built Worker serves the dashboard over a migrated database, reads sessions under the key the database generated, and says GitHub sign-in is not connected until it is
+  gates: []
