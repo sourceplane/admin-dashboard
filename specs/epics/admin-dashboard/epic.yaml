@@ -9,7 +9,7 @@ metadata:
 spec:
   title: "Vercel's Admin Dashboard on Cloudflare Workers and Supabase"
   summary: "Vercel's Next.js Admin Dashboard — a products table with search and paging read through Drizzle, a customers page, Auth.js with GitHub sign-in, shadcn/ui and Tailwind — run on Cloudflare Workers + Static Assets through @opennextjs/cloudflare, its Postgres a Supabase project reached through Hyperdrive, both provisioned by Terraform; the schema, the template's products and the session key applied by db-migrate; GitHub sign-in connected by its owner after the build; and become an Orun baseline that takes a new product from nothing to live on stage and prod in one landing."
-  state: started
+  state: completed
   milestones:
     - name: "AD0 — the spec"
       exitCriteria:

@@ -4,7 +4,7 @@
 |---|---|---|
 | AD0 — the spec | ✅ | AD-1 |
 | AD1 — the dashboard on Workers and Supabase | ✅ | AD-2 |
-| AD2 — a baseline | planned | AD-3 |
+| AD2 — a baseline | ✅ | AD-3, tagged `baseline-v1` |
 
 ## Departures from the upstream template
 
