@@ -8,7 +8,7 @@ baseline that makes a copy of it somebody else's product in one landing.**
 
 | | |
 |---|---|
-| Status | In progress — AD0 on main |
+| Status | In progress — AD1 on main: the site runs on Workers |
 | Upstream | [vercel/nextjs-postgres-nextauth-tailwindcss-template](https://github.com/vercel/nextjs-postgres-nextauth-tailwindcss-template) (MIT), Vercel's [Admin Dashboard](https://vercel.com/templates/next.js/admin-dashboard), at `fe02671` |
 | Reference | [postgres-drizzle-starter](https://github.com/sourceplane/postgres-drizzle-starter) — Supabase through Hyperdrive, migrations, db-migrate, row-level security; [ai-chatbot](https://github.com/sourceplane/ai-chatbot) — Auth.js on Workers, the session key generated in the database |
 | Key | `AD` |
