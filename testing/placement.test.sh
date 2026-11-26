@@ -150,11 +150,11 @@ for comp_path in ("apps/web", "infra/terraform/supabase", "infra/terraform/cloud
         if not ref.startswith(f"secret://{ws}/{repo}/"):
             bad(f"{comp_path} {k} resolves from {ref} — not the product's workspace and project")
 
-# The upstream template's own link survives the rename, though Vercel's page
-# for it spells this baseline's slug.
+# The dashboard's home link goes to Orunbase's baselines, a path that spells no
+# slug, so the rename leaves it alone.
 nav = (tree / "apps/web/app/(dashboard)/layout.tsx").read_text()
-if 'href="https://vercel.com/templates/next.js/admin-dashboard-tailwind-postgres-react-nextjs"' not in nav:
-    bad("the dashboard's link to the upstream template was renamed")
+if 'href="https://orunbase.com/baselines/"' not in nav:
+    bad("the dashboard's home link does not go to orunbase.com/baselines/")
 
 # The wrangler config is committed, and is the fixture render of the
 # (rebranded) template — the composition checks it exists before the build.

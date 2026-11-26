@@ -403,8 +403,8 @@ if name not in [html.unescape(b) for b in brand]:
     bad(f"the dashboard's home link is not labelled with the product's name: {brand}")
 if "Admin Dashboard" in home:
     bad("the dashboard still carries the baseline's name")
-if 'href="https://vercel.com/templates/next.js/admin-dashboard-tailwind-postgres-react-nextjs"' not in home:
-    bad("the home link to the upstream template was renamed")
+if 'href="https://orunbase.com/baselines/"' not in home:
+    bad("the home link does not go to orunbase.com/baselines/")
 first = names(home)
 if len(first) != 5 or "Showing <strong>1-5</strong> of <strong>10</strong>" not in home:
     bad(f"/ does not show the first five of ten products: {first}")
