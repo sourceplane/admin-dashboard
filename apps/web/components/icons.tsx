@@ -108,19 +108,22 @@ export function Logo() {
   );
 }
 
-export function VercelLogo(props: React.SVGProps<SVGSVGElement>) {
+// The Orunbase mark (small build), drawn for the primary-coloured tile it sits
+// on: the dome takes the text colour, the earth the amber for that surface.
+export function OrunbaseMark(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
-      aria-label="Vercel logomark"
-      height="64"
+      aria-label="Orunbase mark"
+      height="48"
       role="img"
-      viewBox="0 0 74 64"
+      viewBox="0 0 48 48"
     >
+      <path d="M5.06 31.58 A20.4 20.4 0 1 1 42.94 31.58 Z" fill="currentColor" />
       <path
-        d="M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z"
-        fill="currentColor"
-      ></path>
+        d="M10.43 39.23 A20.4 20.4 0 0 0 37.57 39.23 Z"
+        className="fill-[#E3B34C] dark:fill-[#B8862F]"
+      />
     </svg>
   );
 }

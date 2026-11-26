@@ -214,7 +214,7 @@ function trackedFiles() {
 //
 // This tree IS Vercel's Admin Dashboard template, and Vercel's page for it is
 // `vercel.com/templates/next.js/admin-dashboard…` — this baseline's slug. The
-// dashboard's home link and the READMEs' credits name that page, and the
+// READMEs' credits name that page (the dashboard's home link did once), and the
 // repo-slug rule would otherwise rename it, pointing a product's visitors at a
 // template page that does not exist. Masked before the rules run, and allowed
 // by the leftover sweep. (The template's repository and demo,
